@@ -9,6 +9,16 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
+        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+        <property id="672037151186491528" name="presentation" index="1L1pqM" />
+      </concept>
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <child id="3348158742936976577" name="members" index="25R1y" />
+      </concept>
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -90,6 +100,11 @@
     <node concept="PrWs8" id="70Taq6tX8uI" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyi" id="59Lkg9yDv3x" role="1TKVEl">
+      <property role="IQ2nx" value="5940618454165221601" />
+      <property role="TrG5h" value="cardinality" />
+      <ref role="AX2Wp" node="59Lkg9yDpHT" resolve="Cardinality" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7PqMtxE3oJj">
     <property role="EcuMT" value="9032753933974342611" />
@@ -113,6 +128,30 @@
     </node>
     <node concept="PrWs8" id="u5HS6mriaq" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="25R3W" id="59Lkg9yDpHT">
+    <property role="3F6X1D" value="5940618454165199737" />
+    <property role="TrG5h" value="Cardinality" />
+    <node concept="25R33" id="59Lkg9yDpHU" role="25R1y">
+      <property role="3tVfz5" value="5940618454165199738" />
+      <property role="TrG5h" value="One_One" />
+      <property role="1L1pqM" value="1:1" />
+    </node>
+    <node concept="25R33" id="59Lkg9yDpI2" role="25R1y">
+      <property role="3tVfz5" value="5940618454165199746" />
+      <property role="TrG5h" value="One_Many" />
+      <property role="1L1pqM" value="1:n" />
+    </node>
+    <node concept="25R33" id="59Lkg9yDpI7" role="25R1y">
+      <property role="3tVfz5" value="5940618454165199751" />
+      <property role="TrG5h" value="Many_One" />
+      <property role="1L1pqM" value="n:1" />
+    </node>
+    <node concept="25R33" id="59Lkg9yDpIe" role="25R1y">
+      <property role="3tVfz5" value="5940618454165199758" />
+      <property role="TrG5h" value="Many_Many" />
+      <property role="1L1pqM" value="n:n" />
     </node>
   </node>
 </model>

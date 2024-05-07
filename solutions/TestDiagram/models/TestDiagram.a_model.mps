@@ -12,6 +12,7 @@
         <child id="9032753933974342612" name="entities" index="nlO8c" />
       </concept>
       <concept id="9032753933974342589" name="ER.structure.Relation" flags="ng" index="nlO9_">
+        <property id="5940618454165221601" name="cardinality" index="KPa7z" />
         <reference id="9032753933974342593" name="Entity2" index="nlO8p" />
         <reference id="9032753933974342591" name="Entity1" index="nlO9B" />
       </concept>
@@ -33,6 +34,7 @@
     <property role="TrG5h" value="TestDatabase" />
     <node concept="nlO9_" id="70Taq6tXyn0" role="2hXiRy">
       <property role="TrG5h" value="Relation1" />
+      <property role="KPa7z" value="59Lkg9yDpHU/One_One" />
       <ref role="nlO9B" node="70Taq6tXymS" resolve="Entity1" />
       <ref role="nlO8p" node="70Taq6tXymV" resolve="Entity2" />
     </node>

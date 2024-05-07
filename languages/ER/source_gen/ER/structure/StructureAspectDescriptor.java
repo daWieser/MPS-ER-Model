@@ -4,19 +4,23 @@ package ER.structure;
 
 import jetbrains.mps.smodel.runtime.BaseStructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptDescriptor;
+import jetbrains.mps.smodel.runtime.EnumerationDescriptor;
 import java.util.Collection;
 import java.util.Arrays;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.adapter.ids.SConceptId;
+import jetbrains.mps.smodel.runtime.DataTypeDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
+import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAttribute = createDescriptorForAttribute();
   /*package*/ final ConceptDescriptor myConceptDatabase = createDescriptorForDatabase();
   /*package*/ final ConceptDescriptor myConceptEntity = createDescriptorForEntity();
   /*package*/ final ConceptDescriptor myConceptRelation = createDescriptorForRelation();
+  /*package*/ final EnumerationDescriptor myEnumerationCardinality = new EnumerationDescriptor_Cardinality();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -51,6 +55,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     }
   }
 
+  @Override
+  public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
+    return Arrays.asList(myEnumerationCardinality);
+  }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
     return myIndexSwitch.index(c);
@@ -91,6 +99,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:4d526599-4195-4f7a-a1be-f5a7d3bb5f9b(ER.structure)/9032753933974342589");
     b.version(3);
+    b.property("cardinality", 0x5271510262a5f0e1L).type(MetaIdFactory.dataTypeId(0x4242f2260ea540a5L, 0x90c79b2c0255ebbaL, 0x5271510262a59b79L)).origin("5940618454165221601").done();
     b.associate("Entity1", 0x7d5ac9d86a0d8bbfL).target(0x4242f2260ea540a5L, 0x90c79b2c0255ebbaL, 0x7d5ac9d86a0d8baaL).optional(false).origin("9032753933974342591").done();
     b.associate("Entity2", 0x7d5ac9d86a0d8bc1L).target(0x4242f2260ea540a5L, 0x90c79b2c0255ebbaL, 0x7d5ac9d86a0d8baaL).optional(false).origin("9032753933974342593").done();
     return b.create();
