@@ -108,10 +108,10 @@
     <node concept="3EZMnI" id="u5HS6mrqLl" role="2wV5jI">
       <node concept="2iRfu4" id="u5HS6mrqLm" role="2iSdaV" />
       <node concept="3F0A7n" id="u5HS6mrqLq" role="3EZMnx">
-        <ref role="1NtTu8" to="61un:u5HS6mrkJ4" resolve="name" />
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0A7n" id="u5HS6mrtXM" role="3EZMnx">
-        <ref role="1NtTu8" to="61un:u5HS6mrkJ6" resolve="pk" />
+        <ref role="1NtTu8" to="61un:u5HS6mrkJ6" resolve="primaryKey" />
       </node>
     </node>
   </node>

@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="4242f226-0ea5-40a5-90c7-9b2c0255ebba" name="ER" version="0" />
+    <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="0" />
   </languages>
   <imports />
   <registry>
@@ -34,6 +35,24 @@
     <property role="TrG5h" value="TestDatabase" />
     <node concept="nlO9_" id="70Taq6tXyn0" role="2hXiRy">
       <property role="TrG5h" value="Relation1" />
+      <property role="KPa7z" value="59Lkg9yDpHU/One_One" />
+      <ref role="nlO9B" node="70Taq6tXymS" resolve="Entity1" />
+      <ref role="nlO8p" node="70Taq6tXymV" resolve="Entity2" />
+    </node>
+    <node concept="nlO9_" id="1ylqJG$Lx5Q" role="2hXiRy">
+      <property role="TrG5h" value="Relation2" />
+      <property role="KPa7z" value="59Lkg9yDpI2/One_Many" />
+      <ref role="nlO9B" node="70Taq6tXymS" resolve="Entity1" />
+      <ref role="nlO8p" node="70Taq6tXymV" resolve="Entity2" />
+    </node>
+    <node concept="nlO9_" id="1ylqJG$Lx5T" role="2hXiRy">
+      <property role="TrG5h" value="Relation3" />
+      <property role="KPa7z" value="59Lkg9yDpHU/One_One" />
+      <ref role="nlO9B" node="70Taq6tXymV" resolve="Entity2" />
+      <ref role="nlO8p" node="70Taq6tXymS" resolve="Entity1" />
+    </node>
+    <node concept="nlO9_" id="1ylqJG$Lx6c" role="2hXiRy">
+      <property role="TrG5h" value="Nam" />
       <property role="KPa7z" value="59Lkg9yDpHU/One_One" />
       <ref role="nlO9B" node="70Taq6tXymS" resolve="Entity1" />
       <ref role="nlO8p" node="70Taq6tXymV" resolve="Entity2" />

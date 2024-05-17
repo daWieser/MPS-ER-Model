@@ -70,15 +70,13 @@
     <property role="EcuMT" value="9032753933974342575" />
     <property role="TrG5h" value="Attribute" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
-    <node concept="1TJgyi" id="u5HS6mrkJ4" role="1TKVEl">
-      <property role="IQ2nx" value="542041097370422212" />
-      <property role="TrG5h" value="name" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyi" id="u5HS6mrkJ6" role="1TKVEl">
       <property role="IQ2nx" value="542041097370422214" />
-      <property role="TrG5h" value="pk" />
+      <property role="TrG5h" value="primaryKey" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="1ylqJG$Lx6j" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="7PqMtxE3oIX">
