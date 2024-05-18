@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/devkits/NewDevkit/NewDevkit.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/ER/ER.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/ER_Diagram/ER_Diagram.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/TestDiagram/TestDiagram.msd" folder="" />
     </projectModules>
   </component>

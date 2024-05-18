@@ -12,6 +12,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Attribute;
   private ConceptPresentation props_Database;
   private ConceptPresentation props_Entity;
+  private ConceptPresentation props_EntityConnection;
   private ConceptPresentation props_Relation;
 
   @Override
@@ -22,7 +23,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Attribute:
         if (props_Attribute == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Attribute");
+          cpb.presentationByName();
           props_Attribute = cpb.create();
         }
         return props_Attribute;
@@ -40,6 +41,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Entity = cpb.create();
         }
         return props_Entity;
+      case LanguageConceptSwitch.EntityConnection:
+        if (props_EntityConnection == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x4242f2260ea540a5L, 0x90c79b2c0255ebbaL, 0x18956afb24e67b60L, 0x18956afb24e6b04aL, "entity", "", "");
+          props_EntityConnection = cpb.create();
+        }
+        return props_EntityConnection;
       case LanguageConceptSwitch.Relation:
         if (props_Relation == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

@@ -12,13 +12,15 @@ public final class LanguageConceptSwitch {
   public static final int Attribute = 0;
   public static final int Database = 1;
   public static final int Entity = 2;
-  public static final int Relation = 3;
+  public static final int EntityConnection = 3;
+  public static final int Relation = 4;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x4242f2260ea540a5L, 0x90c79b2c0255ebbaL);
     builder.put(0x7d5ac9d86a0d8bafL, Attribute);
     builder.put(0x7d5ac9d86a0d8bd3L, Database);
     builder.put(0x7d5ac9d86a0d8baaL, Entity);
+    builder.put(0x18956afb24e67b60L, EntityConnection);
     builder.put(0x7d5ac9d86a0d8bbdL, Relation);
     myIndex = builder.seal();
   }

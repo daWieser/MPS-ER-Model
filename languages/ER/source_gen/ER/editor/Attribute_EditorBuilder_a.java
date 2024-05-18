@@ -55,7 +55,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createProperty_0() {
     getCellFactory().pushCellContext();
     try {
-      final SProperty property = PROPS.name$4Sxo;
+      final SProperty property = PROPS.name$MnvL;
       getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
       EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
       editorCell.setDefaultText("<no name>");
@@ -76,11 +76,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createProperty_1() {
     getCellFactory().pushCellContext();
     try {
-      final SProperty property = PROPS.pk$4SZq;
+      final SProperty property = PROPS.primaryKey$4SZq;
       getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
       EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
-      editorCell.setDefaultText("<no pk>");
-      editorCell.setCellId("property_pk");
+      editorCell.setDefaultText("<no primaryKey>");
+      editorCell.setCellId("property_primaryKey");
       editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
       setCellContext(editorCell);
       Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(new IAttributeDescriptor.AllAttributes().list(myNode), CONCEPTS.PropertyAttribute$Gb);
@@ -96,8 +96,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty name$4Sxo = MetaAdapterFactory.getProperty(0x4242f2260ea540a5L, 0x90c79b2c0255ebbaL, 0x7d5ac9d86a0d8bafL, 0x785b781966d4bc4L, "name");
-    /*package*/ static final SProperty pk$4SZq = MetaAdapterFactory.getProperty(0x4242f2260ea540a5L, 0x90c79b2c0255ebbaL, 0x7d5ac9d86a0d8bafL, 0x785b781966d4bc6L, "pk");
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty primaryKey$4SZq = MetaAdapterFactory.getProperty(0x4242f2260ea540a5L, 0x90c79b2c0255ebbaL, 0x7d5ac9d86a0d8bafL, 0x785b781966d4bc6L, "primaryKey");
   }
 
   private static final class CONCEPTS {
