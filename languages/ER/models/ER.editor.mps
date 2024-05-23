@@ -112,6 +112,9 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0A7n" id="u5HS6mrtXM" role="3EZMnx">
+        <ref role="1NtTu8" to="61un:5amMonhZGh5" resolve="type" />
+      </node>
+      <node concept="3F0A7n" id="5amMonhZIu8" role="3EZMnx">
         <ref role="1NtTu8" to="61un:u5HS6mrkJ6" resolve="primaryKey" />
       </node>
     </node>
