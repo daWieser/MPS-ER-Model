@@ -22,7 +22,9 @@
       <concept id="9032753933974342570" name="ER.structure.Entity" flags="ng" index="nlO9M">
         <child id="9032753933974342586" name="aributes" index="nlO9y" />
       </concept>
-      <concept id="9032753933974342575" name="ER.structure.Attribute" flags="ng" index="nlO9R" />
+      <concept id="9032753933974342575" name="ER.structure.Attribute" flags="ng" index="nlO9R">
+        <property id="542041097370422214" name="primaryKey" index="2hUfL7" />
+      </concept>
       <concept id="1771439655328578400" name="ER.structure.EntityConnection" flags="ng" index="WsL6r">
         <reference id="1771439655328591946" name="entity" index="WsXEL" />
       </concept>
@@ -68,6 +70,7 @@
       </node>
       <node concept="nlO9R" id="1ylqJG$UyuS" role="nlO9y">
         <property role="TrG5h" value="Att2" />
+        <property role="2hUfL7" value="true" />
       </node>
     </node>
     <node concept="nlO9M" id="1ylqJG$UyN5" role="nlO8c">
