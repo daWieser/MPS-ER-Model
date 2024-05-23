@@ -14,6 +14,7 @@
         <property id="672037151186491528" name="presentation" index="1L1pqM" />
       </concept>
       <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
@@ -74,6 +75,11 @@
       <property role="IQ2nx" value="542041097370422214" />
       <property role="TrG5h" value="primaryKey" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="5amMonhZGh5" role="1TKVEl">
+      <property role="IQ2nx" value="5951165534207657029" />
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" node="5amMonhZGgK" resolve="AttributeType" />
     </node>
     <node concept="PrWs8" id="1ylqJG$Lx6j" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -163,6 +169,23 @@
       <property role="20kJfa" value="entity" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7PqMtxE3oIE" resolve="Entity" />
+    </node>
+  </node>
+  <node concept="25R3W" id="5amMonhZGgK">
+    <property role="3F6X1D" value="5951165534207657008" />
+    <property role="TrG5h" value="AttributeType" />
+    <ref role="1H5jkz" node="5amMonhZGgL" resolve="INT" />
+    <node concept="25R33" id="5amMonhZGgL" role="25R1y">
+      <property role="3tVfz5" value="5951165534207657009" />
+      <property role="TrG5h" value="INTEGER" />
+    </node>
+    <node concept="25R33" id="5amMonhZGgN" role="25R1y">
+      <property role="3tVfz5" value="5951165534207657011" />
+      <property role="TrG5h" value="VARCHAR" />
+    </node>
+    <node concept="25R33" id="5amMonhZGgQ" role="25R1y">
+      <property role="3tVfz5" value="5951165534207657014" />
+      <property role="TrG5h" value="DATE" />
     </node>
   </node>
 </model>
