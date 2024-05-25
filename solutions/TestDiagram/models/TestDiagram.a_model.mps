@@ -23,6 +23,7 @@
         <child id="9032753933974342586" name="aributes" index="nlO9y" />
       </concept>
       <concept id="9032753933974342575" name="ER.structure.Attribute" flags="ng" index="nlO9R">
+        <property id="5951165534207657029" name="type" index="23q0R0" />
         <property id="542041097370422214" name="primaryKey" index="2hUfL7" />
       </concept>
       <concept id="1771439655328578400" name="ER.structure.EntityConnection" flags="ng" index="WsL6r">
@@ -77,12 +78,39 @@
       <property role="TrG5h" value="Entity2" />
       <node concept="nlO9R" id="1ylqJG$U$dR" role="nlO9y">
         <property role="TrG5h" value="Att3" />
+        <property role="23q0R0" value="5amMonhZGgQ/DATE" />
       </node>
     </node>
     <node concept="nlO9M" id="1ylqJG$U_CM" role="nlO8c">
       <property role="TrG5h" value="Entity3" />
       <node concept="nlO9R" id="1ylqJG$UAhr" role="nlO9y">
         <property role="TrG5h" value="Att4" />
+        <property role="23q0R0" value="5amMonhZGgN/VARCHAR" />
+      </node>
+    </node>
+    <node concept="nlO9M" id="5amMoni0dFz" role="nlO8c">
+      <property role="TrG5h" value="Professor" />
+      <node concept="nlO9R" id="5amMoni0dH7" role="nlO9y">
+        <property role="TrG5h" value="ID" />
+        <property role="2hUfL7" value="true" />
+      </node>
+      <node concept="nlO9R" id="5amMoni5LUa" role="nlO9y">
+        <property role="TrG5h" value="name" />
+        <property role="23q0R0" value="5amMonhZGgN/VARCHAR" />
+      </node>
+    </node>
+    <node concept="nlO9M" id="5amMoni5LUg" role="nlO8c">
+      <property role="TrG5h" value="Student" />
+      <node concept="nlO9R" id="5amMoni5LUu" role="nlO9y">
+        <property role="TrG5h" value="ID" />
+        <property role="2hUfL7" value="true" />
+      </node>
+    </node>
+    <node concept="nlO9M" id="5amMoni0dHa" role="nlO8c">
+      <property role="TrG5h" value="Course" />
+      <node concept="nlO9R" id="5amMoni0dHy" role="nlO9y">
+        <property role="TrG5h" value="ID" />
+        <property role="2hUfL7" value="true" />
       </node>
     </node>
     <node concept="nlO9_" id="1ylqJG$UB3Q" role="2hXiRy">
@@ -113,6 +141,16 @@
       </node>
       <node concept="WsL6r" id="1ylqJG$Waga" role="WsVtf">
         <ref role="WsXEL" node="1ylqJG$UyN5" resolve="Entity2" />
+      </node>
+    </node>
+    <node concept="nlO9_" id="5amMoni0dHN" role="2hXiRy">
+      <property role="TrG5h" value="Teaches" />
+      <property role="KPa7z" value="59Lkg9yDpHU/One_One" />
+      <node concept="WsL6r" id="5amMoni0dHO" role="WsUe4">
+        <ref role="WsXEL" node="5amMoni0dFz" resolve="Professor" />
+      </node>
+      <node concept="WsL6r" id="5amMoni0dHP" role="WsVtf">
+        <ref role="WsXEL" node="5amMoni0dHa" resolve="Course" />
       </node>
     </node>
     <node concept="37mRI7" id="1ylqJG$UExW" role="lGtFl">
