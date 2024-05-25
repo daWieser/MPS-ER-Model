@@ -578,7 +578,7 @@
             </node>
             <node concept="lc7rE" id="5amMoni0hbM" role="3cqZAp">
               <node concept="la8eA" id="5amMoni0hg$" role="lcghm">
-                <property role="lacIc" value="REFERENCES " />
+                <property role="lacIc" value=") REFERENCES " />
               </node>
               <node concept="l9hG8" id="5amMoni0hiv" role="lcghm">
                 <node concept="2OqwBi" id="5amMoni0itA" role="lb14g">
@@ -1118,7 +1118,7 @@
               </node>
               <node concept="lc7rE" id="5amMoni4Y7F" role="3cqZAp">
                 <node concept="la8eA" id="5amMoni4Ym9" role="lcghm">
-                  <property role="lacIc" value="REFERENCES " />
+                  <property role="lacIc" value=") REFERENCES " />
                 </node>
                 <node concept="l9hG8" id="5amMoni4Ypc" role="lcghm">
                   <node concept="2OqwBi" id="5amMoni4Ztl" role="lb14g">
